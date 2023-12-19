@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Poppins";
+}
+
+.container {
+    border: 2px solid rgb(188, 182, 182);
+    margin: auto;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    max-width: 800px;
+    display: grid;
+    grid-template-columns: 300px auto;
+    padding: 20px;
+    column-gap: 30px;
+}
+
+.profile {
+    background-color: royalblue;
+    padding: 20px;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#avtar {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.social-icons {
+    display: flex;
+    gap: 20px;
+}
+
+.social-icons a {
+    text-decoration: none;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+/* bottom section */
+.bottom-section {
+    background: #424242;
+    padding: 20px;
+    color: #fff;
+}
+
+.black-line {
+    border: 1px solid #000;
+}
+
+.white-line {
+    border: 1px solid #fff;
+}
+
+/* contact section */
+.contact {
+    margin: 10px auto;
+}
+
+.contact input,
+.contact label {
+    background: none;
+    border: none;
+    display: block;
+    font-size: 18px;
+}
+
+/* skill section */
+.skills {
+    color: #fff;
+    margin: 10px auto;
+}
+
+.skill {
+    margin: 20px auto;
+    display: table;
+}
+
+.skill label {
+    display: block;
+}
+
+.skill progress {
+    height: 10px;
+}
+
+/* certificate section */
+.certificate {
+    margin: 10px auto;
+    color: #fff;
+}
+
+#certificate-head {
+    display: flex;
+}
+
+#certificate-para {
+    text-align: center;
+    margin: 20px;
+}
+
+.right-side {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.heading {
+    color: royalblue;
+}
+
+.para {
+    color: gray;
+    padding-left: 35px;
+}
+
+.objective {
+    margin-bottom: 10px;
+}
+
+.experience{
+    margin-bottom: 20px;
+}
+.role {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0px 5px 0px;
+}
+
+.roll-name {
+    display: flex;
+    gap: 20px;
+}
+.div-1 h3{
+    padding-left: 35px;
+}
