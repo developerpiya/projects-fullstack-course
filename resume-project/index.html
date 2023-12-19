@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Template</title>
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+        * {
+            margin: auto;
+            padding: auto;
+            box-sizing: border-box;
+            font-family: "Poppins";
+        }
+
+        .container {
+            border: 2px solid rgb(188, 182, 182);
+            margin: auto;
+            box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+            max-width: 800px;
+            display: grid;
+            grid-template-columns: 300px auto;
+            padding: 20px;
+        }
+
+        .sections {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .profile {
+            background-color: royalblue;
+            padding: 20px;
+            color: #fff;
+            text-align: center;
+        }
+
+        #avtar {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+        }
+
+        .social-icons {
+            display: flex;
+            gap: 20px;
+        }
+
+        .social-icons a {
+            text-decoration: none;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 5px;
+        }
+
+        /* bottom section */
+        .bottom-section {
+            background: #424242;
+            padding: 20px;
+        }
+
+        .black-border {
+            border-bottom: 2px solid #000;
+        }
+
+        .white-border {
+            border-bottom: 2px solid #fff;
+        }
+
+        /* contact section */
+        .contact {
+            color: #fff;
+            margin: 10px auto;
+        }
+
+        .contact input,
+        .contact label {
+            background: none;
+            border: none;
+            display: block;
+            font-size: 18px;
+        }
+
+        /* skill section */
+        .skills {
+            color: #fff;
+            margin: 10px auto;
+        }
+
+        .skill {
+            margin: 20px auto;
+            display: table;
+        }
+
+        .skill label {
+            display: block;
+        }
+
+        .skill progress{
+            height: 10px;
+        }
+
+        /* certificate section */
+        .certificate{
+            margin: 10px auto;
+            color: #fff;
+        }
+        #certificate-head{
+            display: flex;
+        }
+        #certificate-para{
+            text-align: center;
+            margin: 20px;
+        }
+
+        .right-side{
+            grid-column-start: 2;
+            grid-column-end: 3;
+            grid-row-start: 1;
+            grid-row-end: 3;
+        }
+    </style>
+</head>
+
+<body>
+    <main class="container">
+        <!-- profile left section -->
+        <div class="sections">
+            <section class="profile">
+                <div>
+                    <img src="./assets/avtar.png" alt="" id="avtar">
+                </div>
+                <h1>YOUR NAME</h1>
+                <h3>TITLE</h3>
+                <div class="social-icons">
+                    <a href="https://github.com/"><img src="./assets/github.svg" alt="">githubbid</a>
+                    <a href="https://www.linkedin.com/"><img src="./assets/linkedin.svg" alt="">linkedinbid</a>
+                </div>
+            </section>
+
+
+            <div class="bottom-section">
+                <!-- contact section -->
+                <section class="contact">
+                    <h1>Contact</h1>
+                    <div class="white-border"></div>
+                    <br action="">
+                    <label for="phone">Phone</label>
+                    <input type="text" placeholder="XXXXXXXXXX" name="phone">
+                    <label for="email">Email</label>
+                    <input type="email" placeholder="youremail123@gmail.com" name="email">
+                    </form>
+                </section>
+
+                <!-- skills section -->
+                <section class="skills">
+                    <h1 class="white-border">Skills</h1>
+                    <div class="skill">
+                        <label for="skill1">Skill 1</label>
+                        <progress value="85" max="100"></progress>
+                        <label for="skill1">Skill 2</label>
+                        <progress value="75" max="100"></progress>
+                        <label for="skill1">Skill 3</label>
+                        <progress value="65" max="100"></progress>
+                        <label for="skill1">Skill 4</label>
+                        <progress value="55" max="100"></progress>
+                        <label for="skill1">Skill 5</label>
+                        <progress value="40" max="100"></progress>
+                        <label for="skill1">Skill 6</label>
+                        <progress value="50" max="100"></progress>
+                        <label for="skill1">Skill 7</label>
+                        <progress value="50" max="100"></progress>
+                        <label for="skill1">Skill 8</label>
+                        <progress value="50" max="100"></progress>
+                    </div>
+                </section>
+
+                <!-- certificate section -->
+                <section class="certificate">
+                    <div class="white-border" id="certificate-head">
+                        <h1>Certificate</h1>
+                        <img src="./assets/award.svg" alt="">
+                    </div>
+                    <div id="certificate-para">
+                        <p>Certificate Name 1</p>
+                    <p>Certificate Name 2</p>
+                    <p>Certificate Name 3</p>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <!-- resume right section -->
+<div class="right-side">
+    <!-- objective section -->
+    <section class="objective">
+        <h1 class="black-border">OBJECTIVE</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam quod dolores alias labore quasi saepe, a reprehenderit, velit numquam mollitia ipsa cumque consectetur quam id, aperiam sint! Cupiditate, molestias neque.</p>
+    </section>
+
+    <!-- experience section -->
+    <section class="experience">
+        <h1 class="black-border">WORK EXPERIENCE -n YEARS</h1>
+        <div class="role">
+           
+                
+            <h4><img src="./assets/arrow-right-circle-fill.svg" alt="">Role Name 1</h4>
+       
+            <h4>FROM - TO</h4>
+        </div>
+    </section>
+</div>
+    </main>
+</body>
+
+</html>
