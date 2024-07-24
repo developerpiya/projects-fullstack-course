@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+.main-header{
+    position: sticky;
+    height: 90px;
+    background-color: #fff;
+    box-shadow: 0 86px 34px rgba(0,0,0,.01), 0 48px 29px rgba(0,0,0,.03), 0 5px 12px rgba(0,0,0,.05), 0 0 0 rgba(0,0,0,.05);
+    max-width: 100%;
+}
+nav{
+    align-items: center;
+    display: grid;
+    grid-template-columns: 150px 50px auto auto;
+    margin: 20px 30px 0px 30px;
+}
+nav .nav-logo{
+    width: 120px;
+}
+nav .nav-line p{
+    font-family: none;
+    font-size: 30px;
+    font-weight: 100;
+    color: #eee;
+}
+.nav-menu ul{
+    display: flex;
+    gap: 50px;
+}
+.nav-menu li{
+    list-style-type: none;
+}
+nav .nav-buttons{
+    display: flex;
+    gap: 50px;
+}
+nav .nav-buttons li{
+    list-style-type: none;
+}   
+.nav-menu div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.nav-menu img{
+    width: 40px;
+    margin-bottom: 5px;
+}
+.nav-buttons li{
+    display: flex;
+    gap: 15px;
+   
+}
+.account span{
+    display: flex;
+    gap: 5px;
+}
+nav .nav-buttons{
+    justify-content: end;
+}
+.bus-ticket{
+    min-height: 25px;   
+    background-color: #d84e55;
+    color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+}
+.bus-ticket img{
+    filter: brightness(0) invert(1);
+}
+span{
+    font-weight: bold;
+    font-size: 15px;
+}
+.cab-rental img, .train-ticket img{
+    filter: grayscale(1) brightness(0);
+}
+.cab-rental,.train-ticket{
+    min-height: 25px;
+    padding: 10px;
+    border-radius: 10px;
+}
+.help, .account{
+    padding: 10px;
+    border-radius: 10px;
+}
+.cab-rental:hover, .train-ticket:hover, .help:hover, .account:hover{
+    background-color: #eee;
+    box-shadow: inset 1px 1px 0 #eee, inset 0 -1px 0 #eee;
+}
+
+.cab-rental:hover>img, .train-ticket:hover>img{
+    filter: none;
+}
+
+/* hero section */
+.hero-section{
+    background-image: url('./assets/heroImg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80vh;
+    width: 100vw;
+}
+.hero-section h1{
+    color: #fff;
+    text-align: center;
+    font-size: 32px;
+    font-weight: 900;
+}
+.search-tickets{
+    display: flex;
+    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 5px 12px, rgba(0, 0, 0, 0.05) 0px 0px 0px;
+    border-radius: 32px;
+    cursor: pointer;
+    background: rgb(255, 255, 255);
+    padding: 50px;
+}
+.search-tickets img{
+    height: 20px;
+    width: 20px;
+}
+.search-tickets div{
+    display: flex;
+}
+/* .from::after{
+    content: url('./assets/change.png');
+    transform: scale(.2);
+    border-radius: 50%;
+    border: 1px solid #eee;
+    
+} */
